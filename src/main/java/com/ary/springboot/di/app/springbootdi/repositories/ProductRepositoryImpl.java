@@ -3,11 +3,11 @@ package com.ary.springboot.di.app.springbootdi.repositories;
 import java.util.Arrays;
 import java.util.List;
 
-import org.springframework.context.annotation.Primary;
+
 import org.springframework.stereotype.Repository;
 
 import com.ary.springboot.di.app.springbootdi.models.Product;
-@Primary
+//para poner el name va @Repository("name ")
 @Repository
 public class ProductRepositoryImpl implements ProductRepository{
     private List<Product> data;

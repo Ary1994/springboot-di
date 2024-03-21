@@ -6,8 +6,11 @@ import java.util.List;
 
 import org.springframework.stereotype.Repository;
 
+
 import com.ary.springboot.di.app.springbootdi.models.Product;
 //para poner el name va @Repository("name ")
+//@RequestScope sirve para que cada request o peticion sea individual de las demas 
+//@SessionScope guarda los datos por secion del navegador o lo que sea que lo esta consumiendo 
 @Repository
 public class ProductRepositoryImpl implements ProductRepository{
     private List<Product> data;

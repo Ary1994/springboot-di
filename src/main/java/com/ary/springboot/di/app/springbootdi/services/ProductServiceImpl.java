@@ -13,8 +13,9 @@ public class ProductServiceImpl implements ProductService{
     //en caso de hacer la inyeccion con autowired como atributo va en @qualifier abajo de @Auto
     private ProductRepository repository;
     //se esta inyectando el repositorio mediante el contructor que no va con autowired
-    //tambien se puede poner en qualifier un name desde el componente
-    public ProductServiceImpl(@Qualifier("productRepositoryImpl") ProductRepository repository) {
+    //tambien se puede poner en qualifier un name desde el componente 
+    //eso va en el contructor de abajo para guar el servis @Qualifier("productRepositoryJson")
+    public ProductServiceImpl( @Qualifier("productRepositoryJson") ProductRepository repository) {
         this.repository = repository;
     }
     @Override

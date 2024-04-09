@@ -1,0 +1,22 @@
+[
+    {
+        "id": 1,
+        "name": "pepito",
+        "price": 375
+    },
+    {
+        "id": 2,
+        "name": "Cpu Intel Core i9",
+        "price": 1062
+    },
+    {
+        "id": 3,
+        "name": "Teclado Razer Mini 60%",
+        "price": 225
+    },
+    {
+        "id": 4,
+        "name": "Motherboard Gigabite",
+        "price": 612
+    }
+]
